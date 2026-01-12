@@ -9,3 +9,5 @@
 - [2026-01-12] Adjusted header to fixed semi-transparent overlay, swapped rotating-word order to appear before "DESIGN", updated rotating animation timing, set body top padding dynamically, and updated RGBA text/button colors to match new accessibility spec.
 
 - [2026-01-12] Tweaked header transparency and RGBA colors: header background set to rgba(255,255,255,0.5); site name and rotating words updated to lower opacity RGBA values; CV button border/text updated to 55% opacity. Also removed extra left padding on `h2.hi` so right-column content aligns consistently at 60px from the divider.
+
+- [2026-01-12] Added scroll-based transparency: header now toggles `.scrolled` when `window.scrollY > 100`. In scrolled state header background becomes `rgba(255,255,255,0.25)` and header text/button colors reduce opacity per spec. Implemented JS scroll listener and CSS `.site-header.scrolled` rules.

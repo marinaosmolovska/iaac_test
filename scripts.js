@@ -13,4 +13,16 @@ document.addEventListener('DOMContentLoaded', function(){
 
   // smooth scrolling for internal anchors
   document.documentElement.style.scrollBehavior = 'smooth';
+  
+  // Toggle scrolled class when user scrolls more than 100px
+  function handleScroll(){
+    if(!header) return;
+    if(window.scrollY > 100){
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  }
+  window.addEventListener('scroll', handleScroll, {passive:true});
+  handleScroll();
 });

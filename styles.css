@@ -34,7 +34,7 @@ body{
   left:0;
   width:100vw;
   z-index:1000;
-  transition:all 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
   background: rgba(255,255,255,0.5);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -49,6 +49,28 @@ body{
   position:relative;
   background:transparent; /* actual overlay comes from .site-header */
 }
+
+/* Scrolled (reduced opacity) state */
+.site-header.scrolled{
+  background: rgba(255,255,255,0.25);
+}
+
+/* Smooth color/border transitions for header children */
+.site-header .header-inner .site-name,
+.site-header .header-inner .location,
+.site-header .header-inner .rotator .static,
+.site-header .header-inner .rotating .word,
+.site-header .header-inner .cv-btn{
+  transition: color 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.site-header.scrolled .site-name{color: rgba(0,0,0,0.35)}
+.site-header.scrolled .location{color: rgba(153,153,153,0.3)}
+.site-header.scrolled .rotator .static{color: rgba(0,0,0,0.35)}
+.site-header.scrolled .rotating .word:nth-child(1){color: rgba(0,0,0,0.35)}
+.site-header.scrolled .rotating .word:nth-child(2){color: rgba(153,153,153,0.3)}
+.site-header.scrolled .rotating .word:nth-child(3){color: rgba(204,204,204,0.3)}
+.site-header.scrolled .cv-btn{border-color: rgba(153,153,153,0.3); color: rgba(102,102,102,0.3)}
 .site-name{font-size:52px;margin:0;font-weight:700;letter-spacing:3px;margin-bottom:8px;color:rgba(0,0,0,0.6);text-align:center}
 .location{position:absolute;left:80px;top:50%;transform:translateY(-50%);font-size:13px;color:rgba(153,153,153,0.55);font-weight:300}
 .center-head{display:flex;flex-direction:column;align-items:center}
