@@ -8,44 +8,44 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <div id="headerSentinel"></div>
   <header id="siteHeader" class="site-header">
     <div class="header-inner">
-      <div class="title-wrap">
-        <h1 class="site-name">MARINA OSMOLOVSKA</h1>
-        <div class="location">London, UK</div>
-      </div>
+      <div class="location">London, UK</div>
 
-      <div class="rotator">
-        <div class="static">DESIGN</div>
-        <div class="rotating" aria-hidden="true">
-          <span class="word">ARCHITECTURAL</span>
-          <span class="word">COMPUTATIONAL</span>
-          <span class="word">INTERIOR</span>
+      <div class="center-head">
+        <h1 class="site-name">MARINA OSMOLOVSKA</h1>
+        <div class="rotator">
+          <span class="static">DESIGN</span>
+          <span class="rotating">
+            <span class="word">ARCHITECTURAL</span>
+            <span class="word">COMPUTATIONAL</span>
+            <span class="word">INTERIOR</span>
+          </span>
         </div>
       </div>
 
-      <a class="cv-btn" id="downloadCv" href="Marina_Osmolovska_CV.pdf" download>download CV</a>
+      <a class="cv-btn" id="downloadCv" href="Marina_Osmolovska_CV.pdf" download>DOWNLOAD CV</a>
     </div>
   </header>
 
   <main id="mainContent" class="site-main">
     <div class="container two-col">
       <div class="col left">
-        <section class="about">
+        <section class="about first-about">
           <h3 class="small-head">ABOUT -</h3>
           <p class="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
           <p class="muted">Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
         </section>
 
-        <div style="height:80px"></div>
-
-        <section class="about">
+        <section class="about second-about">
           <h3 class="small-head">ABOUT -</h3>
           <p class="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
           <p class="muted">Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
         </section>
 
-        <section class="years" style="margin-top:60px">
+        <section class="years">
           <div class="year">2025 - ongoing</div>
           <div class="year">2016 - 2019</div>
           <div class="year">2015 - 2020</div>
@@ -76,10 +76,10 @@
         <section class="education">
           <h3 class="section-head">EDUCATION</h3>
           <div class="edu-list">
-            <div class="edu-row"><span class="edu-year">—</span><span class="edu-text">rcAS: Master in Advanced Computational Design for Architecture (MA)</span></div>
-            <div class="edu-row"><span class="edu-year">—</span><span class="edu-text">Dessau Institute of Architecture HS Anhalt. Erasmus exchange (IVA) during Bachelor's studies in Lodz</span></div>
-            <div class="edu-row"><span class="edu-year">—</span><span class="edu-text">Lodz University of Technology (BSc Hons Architecture) (International Students Bursary), Lodz, Poland</span></div>
-            <div class="edu-row"><span class="edu-year">—</span><span class="edu-text">National Academy of Fine Arts and Architecture (First year of BArch) Kyiv, Ukraine</span></div>
+            <div class="edu-row"><span class="edu-text">rcAS: Master in Advanced Computational Design for Architecture (MA)</span></div>
+            <div class="edu-row"><span class="edu-text">Dessau Institute of Architecture HS Anhalt. Erasmus exchange (IVA) during Bachelor's studies in Lodz</span></div>
+            <div class="edu-row"><span class="edu-text">Lodz University of Technology (BSc Hons Architecture) (International Students Bursary), Lodz, Poland</span></div>
+            <div class="edu-row"><span class="edu-text">National Academy of Fine Arts and Architecture (First year of BArch) Kyiv, Ukraine</span></div>
           </div>
         </section>
       </div>
@@ -87,18 +87,40 @@
 
     <section class="academic-works">
       <h3 class="section-head center">ACADEMIC WORKS</h3>
-      <div class="works-grid">
-        <img src="images/work1.jpg" alt="Architectural interior with fabric/membrane ceiling"/>
-        <img src="images/work2.jpg" alt="Interior with sculptural furniture and plants"/>
-        <img src="images/work3.jpg" alt="Abstract white geometric pattern"/>
-        <img src="images/work4.jpg" alt="Exterior visualization with parametric white structure at twilight"/>
-        <img src="images/work5.jpg" alt="Outdoor installation with woven seating"/>
+
+      <div class="project" data-title="Architectural interior with membrane ceiling">
+        <img src="https://picsum.photos/seed/work1/1600/1000" alt="Architectural interior with membrane ceiling" loading="lazy">
+        <div class="overlay">
+          <div class="info"><h3>Architectural interior</h3><p>Membrane ceiling study</p></div>
+        </div>
+      </div>
+
+      <div class="project" data-title="Interior with sculptural furniture">
+        <img src="https://picsum.photos/seed/work2/1600/1000" alt="Interior with sculptural furniture" loading="lazy">
+        <div class="overlay"><div class="info"><h3>Sculptural furniture</h3><p>Interior study</p></div></div>
+      </div>
+
+      <div class="project" data-title="White geometric pattern">
+        <img src="https://picsum.photos/seed/work3/1600/1000" alt="White geometric pattern" loading="lazy">
+        <div class="overlay"><div class="info"><h3>Geometric pattern</h3><p>Abstract study</p></div></div>
+      </div>
+
+      <div class="project" data-title="Parametric structure exterior">
+        <img src="https://picsum.photos/seed/work4/1600/1000" alt="Parametric structure exterior" loading="lazy">
+        <div class="overlay"><div class="info"><h3>Parametric structure</h3><p>Exterior visualization</p></div></div>
+      </div>
+
+      <div class="project" data-title="Outdoor sculptural seating">
+        <img src="https://picsum.photos/seed/work5/1600/1000" alt="Outdoor sculptural seating" loading="lazy">
+        <div class="overlay"><div class="info"><h3>Sculptural seating</h3><p>Public furniture</p></div></div>
       </div>
     </section>
 
-    <section class="professional">
-      <h3 class="section-head center">PROFESSIONAL</h3>
-    </section>
+    <div class="container">
+      <section class="professional">
+        <h3 class="section-head center">PROFESSIONAL</h3>
+      </section>
+    </div>
   </main>
 
   <script src="scripts.js"></script>
