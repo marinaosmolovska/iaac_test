@@ -35,7 +35,7 @@ body{
   width:100vw;
   z-index:1000;
   transition:all 0.3s ease;
-  background: rgba(255,255,255,0.75);
+  background: rgba(255,255,255,0.5);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
@@ -49,12 +49,12 @@ body{
   position:relative;
   background:transparent; /* actual overlay comes from .site-header */
 }
-.site-name{font-size:52px;margin:0;font-weight:700;letter-spacing:3px;margin-bottom:8px;color:rgba(0,0,0,0.85);text-align:center}
-.location{position:absolute;left:80px;top:50%;transform:translateY(-50%);font-size:13px;color:rgba(153,153,153,0.8);font-weight:300}
+.site-name{font-size:52px;margin:0;font-weight:700;letter-spacing:3px;margin-bottom:8px;color:rgba(0,0,0,0.6);text-align:center}
+.location{position:absolute;left:80px;top:50%;transform:translateY(-50%);font-size:13px;color:rgba(153,153,153,0.55);font-weight:300}
 .center-head{display:flex;flex-direction:column;align-items:center}
 
 .rotator{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:4px}
-.rotator .static{display:inline-block;font-weight:700;font-size:15px;letter-spacing:2px;color:rgba(0,0,0,0.85);text-align:left}
+.rotator .static{display:inline-block;font-weight:700;font-size:15px;letter-spacing:2px;color:rgba(0,0,0,0.6);text-align:left}
 .rotating{position:relative;height:20px;overflow:hidden;display:inline-block;width:180px;text-align:right}
 .rotating .word{display:block;position:absolute;left:0;right:0;opacity:0;transform:translateY(100%);text-transform:uppercase;letter-spacing:2px}
 .rotating .word:nth-child(1){font-weight:700;color:var(--black)}
@@ -69,11 +69,11 @@ body{
   100%{opacity:0;transform:translateY(-100%)}
 }
 .rotating .word{animation:rotateWords 10.8s ease-in-out infinite}
-.rotating .word:nth-child(1){animation-delay:0s}
-.rotating .word:nth-child(2){animation-delay:3.6s}
-.rotating .word:nth-child(3){animation-delay:7.2s}
+.rotating .word:nth-child(1){animation-delay:0s;font-weight:700;color:rgba(0,0,0,0.6)}
+.rotating .word:nth-child(2){animation-delay:3.6s;font-weight:400;color:rgba(153,153,153,0.55)}
+.rotating .word:nth-child(3){animation-delay:7.2s;font-weight:300;color:rgba(204,204,204,0.55)}
 
-.cv-btn{position:absolute;right:80px;top:50%;transform:translateY(-50%);border:1.5px solid rgba(153,153,153,0.8);background:transparent;padding:10px 24px;border-radius:3px;text-decoration:none;color:rgba(102,102,102,0.8);font-size:11px;text-transform:uppercase;letter-spacing:1.5px;font-weight:500;cursor:pointer;transition:all 0.3s ease}
+.cv-btn{position:absolute;right:80px;top:50%;transform:translateY(-50%);border:1.5px solid rgba(153,153,153,0.55);background:transparent;padding:10px 24px;border-radius:3px;text-decoration:none;color:rgba(102,102,102,0.55);font-size:11px;text-transform:uppercase;letter-spacing:1.5px;font-weight:500;cursor:pointer;transition:all 0.3s ease}
 .cv-btn:hover{background:rgba(245,245,245,0.9);border-color:rgba(102,102,102,0.9)}
 
 /* Two column layout with vertical divider */
@@ -91,7 +91,7 @@ body{
 .years .year{font-size:13px;line-height:1.8;color:#999999;font-weight:400;margin-bottom:6px}
 
 /* Right column */
-.hi{font-size:36px;font-weight:700;color:var(--black);margin-bottom:50px;padding-left:60px}
+.hi{font-size:36px;font-weight:700;color:var(--black);margin-bottom:50px;padding-left:0}
 .section-head{font-size:22px;font-weight:700;letter-spacing:0.5px;color:var(--black);margin-bottom:24px}
 .section-head.center{text-align:center}
 .bullets{list-style:none;padding-left:0;margin:0}
